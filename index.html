@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+        <title>Node.js Dodge Game</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="script/jscolor/jscolor.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas" width="1000" height="600">
+            Your browser needs to support canvas for this to work!
+        </canvas>
+        <div id="playerSettings">
+            <h1>Dodge!</h1>
+            <h2>(Node.js Edition)</h2>
+            <div id="playerInputs">
+                <br>Player Name: <input id="playerName" type="text" value="Player" />
+                <br>Player Color: <input id="playerColor" class="color" value="0033ff" />
+            </div>
+            <br><button id="goButton" onclick="setNameAndColor()">Go!</button> 
+        </div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+		<script src="script/game.js"></script>
+        <script src="script/windowHandler.js"></script>
+    </body>
+</html>
